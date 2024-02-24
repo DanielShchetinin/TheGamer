@@ -3,9 +3,9 @@ from django.db import models
 
 # Create your models here.
 class Game(models.Model):
-    name = models.CharField(null=False, blank=False, max_length=128)
-    summary = models.CharField(null=True, blank=True, max_length=1028)
-    release_date = models.DateField(null=True, blank=True)
+    name = models.CharField(null=False, blank=False, max_length=128, unique=True)
+    summary = models.CharField(null=False, blank=False, max_length=1028)
+    release_date = models.DateField(null=False, blank=False)
 
     developers = models.ManyToManyField("Developer", through="GameDeveloper")
     genres = models.ManyToManyField("Genre", through="GameGenre")
@@ -50,7 +50,6 @@ class Post(models.Model):
     content = models.TextField(null=False, blank=False)
     release_date = models.DateField(null=False, blank=False)
     writer = models.CharField(null=False, blank=False, max_length=64)
-
     class Meta:
         db_table = 'posts'
 
