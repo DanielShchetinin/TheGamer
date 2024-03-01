@@ -50,6 +50,7 @@ class Post(models.Model):
     content = models.TextField(null=False, blank=False)
     release_date = models.DateField(null=False, blank=False)
     writer = models.CharField(null=False, blank=False, max_length=64)
+
     class Meta:
         db_table = 'posts'
 

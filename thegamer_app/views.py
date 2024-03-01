@@ -99,6 +99,7 @@ def get_genres(request):
         serializer = CreateGenreSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         serializer.save()
+        print(serializer.data)
         return Response(serializer.data, status=status.HTTP_201_CREATED)
 
 
@@ -149,7 +150,7 @@ def get_publisher(request: Request, publisher_id):
         return Response(status=204)
 
 
-### Posts
+## Posts
 @api_view(['GET', 'POST'])
 def get_posts(request):
     if request.method == 'GET':

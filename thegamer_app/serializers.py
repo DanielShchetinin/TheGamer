@@ -134,13 +134,9 @@ class CreatePostSerializer(serializers.ModelSerializer):
 
     def create(self, validated_data):
         with transaction.atomic():
-            print("                                                " * 25)
-            print(validated_data)
-            game_data = validated_data.pop('game')
-            print(validated_data)
+            game_data = validated_data['game']
             post = Post.objects.create(**validated_data)
             GamePost.objects.create(**game_data, post_id=post.id)
-            print(post)
             return post
 
 
