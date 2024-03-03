@@ -34,6 +34,8 @@ class Developer(models.Model):
 class Publisher(models.Model):
     name = models.CharField(null=False, blank=False, max_length=128)
 
+    games = models.ManyToManyField("Game", through="GamePublisher")
+
     class Meta:
         db_table = 'publishers'
 
@@ -41,6 +43,7 @@ class Publisher(models.Model):
 class Genre(models.Model):
     name = models.CharField(null=False, blank=False, max_length=128)
 
+    games = models.ManyToManyField("Game", through="GameGenre")
     class Meta:
         db_table = 'genres'
 
@@ -50,6 +53,8 @@ class Post(models.Model):
     content = models.TextField(null=False, blank=False)
     release_date = models.DateField(null=False, blank=False)
     writer = models.CharField(null=False, blank=False, max_length=64)
+
+    games = models.ManyToManyField("Game", through="GamePost")
 
     class Meta:
         db_table = 'posts'

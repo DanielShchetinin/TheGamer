@@ -10,7 +10,7 @@ class GameSerializer(serializers.ModelSerializer):
     class Meta:
         model = Game
         # fields = '__all__'
-        fields = ['id', 'name', 'release_date']
+        fields = ['id', 'name', 'summary', 'release_date']
 
 
 class DetailedGameSerializer(serializers.ModelSerializer):
@@ -39,13 +39,13 @@ class DetailedDeveloperSerializer(serializers.ModelSerializer):
 class DeveloperSerializer(serializers.ModelSerializer):
     class Meta:
         model = Developer
-        fields = '__all__'
+        exclude = ['games']
 
 
 class CreateDeveloperSerializer(serializers.ModelSerializer):
     class Meta:
         model = Developer
-        fields = ['id', 'name']
+        fields = ['id', 'name', "games"]
         extra_kwargs = {
             'id': {"read_only": True}
         }
@@ -62,13 +62,13 @@ class DetailedGenreSerializer(serializers.ModelSerializer):
 class GenreSerializer(serializers.ModelSerializer):
     class Meta:
         model = Genre
-        fields = '__all__'
+        exclude = ['games']
 
 
 class CreateGenreSerializer(serializers.ModelSerializer):
     class Meta:
         model = Genre
-        fields = ['id', 'name']
+        fields = ['id', 'name', 'games']
         extra_kwargs = {
             'id': {"read_only": True}
         }
@@ -84,7 +84,7 @@ class DetailedPublisherSerializer(serializers.ModelSerializer):
 class PublisherSerializer(serializers.ModelSerializer):
     class Meta:
         model = Publisher
-        fields = '__all__'
+        exclude = ['games']
 
 
 class CreatePublisherSerializer(serializers.ModelSerializer):
@@ -107,7 +107,7 @@ class DetailedPostSerializer(serializers.ModelSerializer):
 class PostSerializer(serializers.ModelSerializer):
     class Meta:
         model = Post
-        fields = '__all__'
+        fields = ['id', 'title', 'release_date']
 
 
 class GamePostSerializer(serializers.ModelSerializer):
@@ -145,7 +145,6 @@ class GameDevelopersSerializer(serializers.ModelSerializer):
         model = GameDeveloper
         # fields = '__all__'
         exclude = ['id', 'game']
-        depth = 1
 
 
 class CreateGameDevelopersSerializer(serializers.ModelSerializer):

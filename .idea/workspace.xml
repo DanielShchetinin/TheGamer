@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0f614016-464d-4447-bf06-c6dd93e0a90f" name="Changes" comment="Project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo_orm.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo_orm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/thegamer/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/thegamer/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/thegamer_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/thegamer_app/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/thegamer_app/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/thegamer_app/serializers.py" afterDir="false" />
@@ -35,6 +33,9 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/thegamer_app/serializers.py" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -139,7 +140,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-5a2391486177-2887949eec09-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.13763.11" />
+        <option value="bundled-python-sdk-d68999036c7f-b11f5e8da5ad-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.14475.56" />
       </set>
     </attachedChunks>
   </component>
@@ -170,7 +171,15 @@
       <workItem from="1709287704716" duration="317000" />
       <workItem from="1709288818351" duration="2447000" />
       <workItem from="1709295657769" duration="2430000" />
-      <workItem from="1709306768663" duration="204000" />
+      <workItem from="1709306768663" duration="2375000" />
+      <workItem from="1709311022879" duration="750000" />
+      <workItem from="1709322684401" duration="7278000" />
+      <workItem from="1709383607934" duration="3433000" />
+      <workItem from="1709397728130" duration="2094000" />
+      <workItem from="1709405271102" duration="406000" />
+      <workItem from="1709462359237" duration="2354000" />
+      <workItem from="1709464729456" duration="3274000" />
+      <workItem from="1709497707007" duration="2749000" />
     </task>
     <task id="LOCAL-00001" summary="Project">
       <option name="closed" value="true" />
@@ -204,7 +213,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708762999524</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Project">
+      <option name="closed" value="true" />
+      <created>1709307001383</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1709307001383</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,6 +235,6 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TheGamerProject$demo_orm.coverage" NAME="demo_orm Coverage Results" MODIFIED="1709287861703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/TheGamerProject$serializers.coverage" NAME="serializers Coverage Results" MODIFIED="1709305088722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/thegamer_app" />
-    <SUITE FILE_PATH="coverage/TheGamerProject$runserver.coverage" NAME="runserver Coverage Results" MODIFIED="1709306962123" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TheGamerProject$runserver.coverage" NAME="runserver Coverage Results" MODIFIED="1709497923608" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
